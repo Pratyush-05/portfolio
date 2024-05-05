@@ -1,20 +1,29 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import './styles.css';
-
-const App = () => {
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
+function App() {
   return (
     <Router>
-      <div className="app">
+      <div className="app-container">
+        <Navbar />
+        <div className="content">
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/projects" element={<Projects/>} />
+          <Route path="/skills" element={<Skills/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
+        </div>
+        <Footer />
       </div>
     </Router>
   );
-};
+}
 
 export default App;
