@@ -42,10 +42,9 @@
   .btn:hover {
     background-color: rgb(60, 60, 60);
   }
-  
-  .hero-image img {
-    max-width: 30%;
-    height: auto;
-    border-radius: 19.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .subheading p{
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 0;
   }

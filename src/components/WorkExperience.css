@@ -1,0 +1,60 @@
+/* WorkExperience.css */
+.work-experience-card {
+    background-color: #f8f8f8;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    border: 2px solid transparent;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .work-experience-card:hover {
+    border: 2px solid #333;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .role-info {
+    text-align: right;
+  }
+  
+  .role-info p {
+    font: 1em sans-serif;
+    margin: 5px;
+    text-align: right;
+  }
+  
+  .card-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 16px;
+  }
+
+  .role{
+    font: 1em sans-serif;
+  }
+
+  .tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  
+  .tech-stack {
+    background-color: #fff;
+    color: #000;
+    padding: 6px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+  }  
