@@ -13,17 +13,17 @@ const Navbar = () => {
       <ul className="navbar-nav">
 
         <li className="nav-item">
-          <Link to="skills" className="nav-link" smooth={true} duration={500} offset={-16}>
+          <Link to="skills" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active" >
             Skills
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="experience" className="nav-link" smooth={true} duration={500} offset={-16} >
+          <Link to="experience" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active">
             Experience
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="projects" className="nav-link" smooth={true} duration={500} offset={-16}>
+          <Link to="projects" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active">
             Projects
           </Link>
         </li>

@@ -12,22 +12,22 @@ const Home = () => {
           <h1>Pratyush Purohit</h1>
           <h3>Front-end Developer</h3>
           
-          <p>Hi, I'm Pratyush, a passionate front-end developer with expertise in Angular and React.</p>
+          <p>Hi, I'm Pratyush, a passionate front-end developer with expertise in Angular and React. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut aperiam nihil vitae possimus deleniti dolores quas ipsa esse, blanditiis, officiis itaque nam eveniet vel illum a! Vitae quidem earum temporibus mollitia repudiandae ut magnam omnis, debitis nemo molestias deserunt sed qui corporis, sint dicta quae nam esse ipsum, aspernatur doloribus?</p>
 
-          <div className="subheading" id = "skills"> 
+          <div className="subheading" id = "skills" name = "skills"> 
             <p>Skills</p>
             <hr/>
-            <Skills/>
+            <Skills />
           </div>
-          <div className="subheading" id = "experience">
+          <div className="subheading" id = "experience" name = "experience">
             <p>Experience</p>
             <hr/>
-            <Experience/>
+            <Experience />
           </div>
-          <div className="subheading" id = "projects">
+          <div className="subheading" id = "projects" name = "projects">
             <p>Projects</p>
             <hr/>
-            <Projects/>
+            <Projects />
           </div>
         </div>
 

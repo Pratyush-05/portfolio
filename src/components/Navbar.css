@@ -5,6 +5,9 @@
     background-color: white;
     color: #fff;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
   
   .navbar-brand a {
@@ -31,6 +34,12 @@
     padding: 0.5rem;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
+  }
+
+  .nav-link.active { /* Class for the active link */
+    font-weight: bold; /* Making the text bold */
+    font-size: 1.25rem; /* Increasing the font size to make it grow */
+    color: black; /* Change color to make it visually distinctive */
   }
   
   .nav-link:hover {
