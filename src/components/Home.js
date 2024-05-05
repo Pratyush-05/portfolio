@@ -14,20 +14,21 @@ const Home = () => {
           <h3>Front-end Developer</h3>
           
           <p>Hi, I'm Pratyush, a passionate front-end developer with expertise in Angular and React.</p>
-          <div className="subheading">
-            <p>Projects</p>
-            <hr/>
-            <Projects/>
-          </div>
-          <div className="subheading">
+
+          <div className="subheading" id = "skills"> 
             <p>Skills</p>
             <hr/>
             <Skills/>
           </div>
-          <div className="subheading">
+          <div className="subheading" id = "experience">
             <p>Experience</p>
             <hr/>
             <Experience/>
+          </div>
+          <div className="subheading" id = "projects">
+            <p>Projects</p>
+            <hr/>
+            <Projects/>
           </div>
         </div>
 
