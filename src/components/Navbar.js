@@ -12,14 +12,20 @@ const Navbar = () => {
       </div>
       <ul className="navbar-nav">
 
-        <li className="nav-item">
-          <Link to="skills" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active" >
-            Skills
-          </Link>
-        </li>
+ 
         <li className="nav-item">
           <Link to="experience" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active">
             Experience
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="education" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active" >
+            Education
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="skills" spy = {true} className="nav-link" smooth={true} duration={500}  activeClass="active" >
+            Skills
           </Link>
         </li>
         <li className="nav-item">

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #F8F8F8;
     color: #fff;
     padding: 1rem;
     position: sticky;
@@ -44,6 +44,7 @@
   
   .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
   }
 
   .hero-image{
