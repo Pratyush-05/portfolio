@@ -6,3 +6,16 @@
 .education-container{
     text-align: left;
 }
+.vertical-timeline-element-content {
+    background-color: #f8f8f8;
+    box-shadow: none;
+}
+
+.vertical-timeline-element-content:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vertical-timeline-element-content-arrow{
+    color: #f0f0f0;
+}

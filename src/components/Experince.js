@@ -30,6 +30,19 @@ const Experience = () => {
           techStacks: ['Angular', 'Jasmine', 'Karma', 'SonarQube'],
         },
         {
+          company: 'Auxentious Technologies',
+          location: 'Bhubaneswar, Odisha',
+          role: 'Front-end Developer',
+          startDate: 'January 2021',
+          endDate: 'April 2021',
+          responsibilities: [
+            'Involved in building the front-end application for the company using React.',
+            'Worked with the UX team to analyse and understand business requirements and converted the same into UI application.',
+            'Collaborated with the Backend team to create JSON schema and integrate API with UI.'
+          ],
+          techStacks: ['React', 'Jest', 'Tailwind CSS'],
+        },
+        {
           company: 'DRDO',
           location: 'Balasore, Odisha',
           role: 'Project: Classify Different Air-Borne Objects',
@@ -40,7 +53,7 @@ const Experience = () => {
             'Parameters such as signal strength, acceleration, altitude and velocity were considered. Partitioning of the trajectory was done using the moving window concept.',
             'The accuracy rates of the classifier models were noted. It was concluded that the best model for such data is the Decision Tree (Accuracy: 99.69%)',
           ],
-          techStacks: ['Python', 'Machine Learning', 'Decision Tree'],
+          techStacks: ['Python', 'Machine Learning'],
         },
       ];
 
