@@ -1,17 +1,16 @@
 /* ProjectCard.css */
 .project-card {
   
-  padding: 20px;
-  border-radius: 8px;
+  padding: 10px;
+  /* border-radius: 8px; */
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   transition: box-shadow 0.3s ease;
   margin-bottom: 1rem;
-}
-
-.project-card:hover {
-  background-color: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  margin: 1rem 3.5rem;
+  border: 2px solid #570e40;
+  background-color: #fffaf2;
+  box-shadow: -5px 5px 0 0 #ffbf21;
+  border-radius: 10px;
 }
 
 .project-header {
@@ -20,7 +19,7 @@
   align-items: center;
   margin-bottom: 10px;
 }
-ß
+
 .project-title {
   margin: 0;
   transition: color 0.3s ease;
@@ -36,12 +35,12 @@
   margin-bottom: 16px;
 }
 
-.tech-stacks {
+/* .tech-stacks {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
-.tech-stack {
+/* .tech-stack {
   background-color: #fff;
   color: grey !important;
   padding: 4px 8px;
@@ -51,15 +50,14 @@
   border-radius: 4px;
   font-size: 12px;
   transition: transform 0.3s ease;
-}
+} */
 
 .project-card:hover .project-title,
 .project-card:hover .project-link-icon {
-  color: black;
+  cursor: pointer;
 }
 
-.project-card:hover .project-link-icon,
-.project-card:hover .tech-stack {
+.project-card:hover .project-link-icon{
   color: black !important;
   transform: scale(1.1);
   border-color: black !important;

@@ -45,7 +45,7 @@ const Education = () => {
             key={index}
             className="vertical-timeline-element--education"
             date={education.time}
-            iconStyle={{ background: "#333", color: "#fff" }}
+            iconStyle={{ background: "#570e40", color: "#fffaf2" }}
             icon={education.icon}
           >
             <h3 className="vertical-timeline-element-title">
