@@ -1,20 +1,20 @@
 /* WorkExperience.css */
 .work-experience-card {
-    background-color: #f8f8f8;
-    color: black;
+    color:#460932;
     padding: 20px;
-    border-radius: 8px;
     transition: border 0.3s ease;
-    border: 2px solid transparent;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    border: 2px solid #570e40;
+    background-color: #fffaf2;
+    box-shadow: -5px 5px 0 0 #ffbf21;
+    border-radius: 10px;
   }
   
-  .work-experience-card:hover {
-    background-color: #f0f0f0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .card-header {
     display: flex;
     justify-content: space-between;
@@ -51,12 +51,20 @@
   }
   
   .tech-stack {
-    background-color: #fff;
-    color: #000;
+    background-color: #570e40;
+    color: #fffaf2;
     padding: 6px 12px;
     margin-right: 8px;
     margin-bottom: 8px;
-    border: 1px solid #000;
+    border: 1px solid #570e40;
     border-radius: 4px;
     font-size: 14px;
+    box-shadow: -2px 2px 0 1px #570e40;
+    border: 1px solid #fffaf2
   }  
+
+  .company{
+    color: #ff4052;
+    padding-bottom: 0px !important;
+  }
+  

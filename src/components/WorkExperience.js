@@ -7,7 +7,7 @@ const WorkExperience = ({ company, location, role, startDate, endDate, responsib
     <div className="work-experience-card">
       <div className="card-header">
         <div className="ex">
-          <h2>{company}</h2>
+          <h2 className='company'>{company}</h2>
           <p className='role'>{role}</p>
         </div>
         <div className="role-info">

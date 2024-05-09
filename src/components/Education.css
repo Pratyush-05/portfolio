@@ -7,15 +7,33 @@
     text-align: left;
 }
 .vertical-timeline-element-content {
-    background-color: #f8f8f8;
-    box-shadow: none;
+
+    color:#460932;
+    /* padding: 20px; */
+    /* transition: border 0.3s ease; */
+    text-align: left;
+    /* margin: 1.5rem; */
+    border: 2px solid #570e40;
+    background-color: #fffaf2;
+    box-shadow: -5px 5px 0 0 #ffbf21;
+    border-radius: 10px;
 }
 
-.vertical-timeline-element-content:hover {
+/* .vertical-timeline-element-content:hover {
     background-color: #f0f0f0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .vertical-timeline-element-content-arrow{
-    color: #f0f0f0;
+
+    border-right: 7px solid #454545;
+}
+
+
+.vertical-timeline-element-date{
+
+    margin-left: 
+    10px;
+
+    margin-right: 10px;
 }
