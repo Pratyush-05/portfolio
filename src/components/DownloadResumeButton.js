@@ -13,7 +13,8 @@ const DownloadResumeButton = ({ googleDriveLink }) => {
     borderColor: '#fffaf2',
     backgroundColor: '#570e40',
     boxShadow: '-2px 2px 0 1px #570e40',
-    border: '2px solid #fffaf2'
+    border: '2px solid #fffaf2',
+    margin: 'auto'
   };
 
   const hoverStyle = {
