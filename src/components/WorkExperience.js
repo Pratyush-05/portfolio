@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './WorkExperience.css';
 
 const WorkExperience = ({ company, location, role, startDate, endDate, responsibilities, techStacks }) => {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const truncatedResponsibilities = responsibilities.slice(0, 2);
 
@@ -19,14 +19,14 @@ const WorkExperience = ({ company, location, role, startDate, endDate, responsib
     <div className="work-experience-card">
       <div className="card-header">
         <div className="ex">
-          <h2 className="company">{company}</h2>
+          <div className="company">{company}</div>
           <p className="role">{role}</p>
         </div>
         <div className="role-info">
-          {expanded ? (
-          <p>{location}</p>
-        ) : (
+          {isMobile && !expanded ? (
           null
+        ) : (
+          <p>{location}</p>
         )}
           <p>{`${startDate} - ${endDate}`}</p>
         </div>

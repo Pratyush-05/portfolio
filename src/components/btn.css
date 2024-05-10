@@ -1,0 +1,28 @@
+.download-resume-button {
+    color: #fffaf2;
+    padding: 10px 20px;
+    border: 2px solid #fffaf2;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: #570e40;
+    box-shadow: -2px 2px 0 1px #570e40;
+    margin: auto;
+    border-color: #fffaf2;
+    border-width: 1px;
+    
+  }
+  
+  .download-resume-button:hover {
+    background-color: #fffaf2;
+    color: #570e40;
+    border-color: #570e40;
+  }
+  
+  @media (max-width: 768px) {
+    .download-resume-button {
+      font-size: small;
+    }
+  }
+  

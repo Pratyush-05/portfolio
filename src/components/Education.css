@@ -1,22 +1,21 @@
-.vertical-timeline::before{
-    background: #a2a2a2 !important;
-    width: 2px !important;
+.vertical-timeline::before {
+  background: #a2a2a2 !important;
+  width: 2px !important;
 }
 
-.education-container{
-    text-align: left;
+.education-container {
+  text-align: left;
 }
 .vertical-timeline-element-content {
-
-    color:#460932;
-    /* padding: 20px; */
-    /* transition: border 0.3s ease; */
-    text-align: left;
-    /* margin: 1.5rem; */
-    border: 2px solid #570e40;
-    background-color: #fffaf2;
-    box-shadow: -5px 5px 0 0 #ffbf21;
-    border-radius: 10px;
+  color: #460932;
+  /* padding: 20px; */
+  /* transition: border 0.3s ease; */
+  text-align: left;
+  /* margin: 1.5rem; */
+  border: 2px solid #570e40;
+  background-color: #fffaf2;
+  box-shadow: -5px 5px 0 0 #ffbf21;
+  border-radius: 10px;
 }
 
 /* .vertical-timeline-element-content:hover {
@@ -24,16 +23,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 } */
 
-.vertical-timeline-element-content-arrow{
-
-    border-right: 7px solid #454545;
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #454545;
 }
 
+.vertical-timeline-element-date {
+  margin-left: 10px;
 
-.vertical-timeline-element-date{
+  margin-right: 10px;
+}
 
-    margin-left: 
-    10px;
-
-    margin-right: 10px;
+@media (max-width: 768px) {
+    .work-experience-card{
+        font-size: smaller;
+    }
+  
 }

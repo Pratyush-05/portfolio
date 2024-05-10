@@ -17,13 +17,18 @@
   margin-bottom: 16px;
 }
 
+.role{
+  font-weight: bold;
+  margin: 0;
+}
+
 .role-info {
   text-align: right;
 }
 
 .role-info p {
-  font: 1em;
-  margin: 5px;
+  margin: 0;
+  font-size: smaller;
   text-align: right;
 }
 
@@ -47,7 +52,7 @@
   margin-bottom: 8px;
   border: 1px solid #570e40;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: smaller;
   box-shadow: -2px 2px 0 1px #570e40;
   border: 1px solid #fffaf2;
 }
@@ -55,6 +60,9 @@
 .company {
   color: #ff4052;
   padding-bottom: 0px !important;
+  font-weight: bolder;
+  font-size: x-large;
+  margin: 0;
 }
 
 .read-more-container {
@@ -71,15 +79,23 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: -2px 2px 0 1px #ff4052;
+  border: 1px solid #fffaf2;
 }
 
 .read-more-btn:hover {
   background-color: #460932;
 }
 
+.ex{
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
   .work-experience-card {
     padding: 10px;
+    font-size: smaller;
   }
 
   .card-header {
@@ -91,4 +107,10 @@
     text-align: left;
     margin-top: 0.5rem;
   }
+
+  .role-info p {
+    text-align: left;
+  }
+
+
 }
