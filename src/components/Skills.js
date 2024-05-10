@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Skills.css';
 import { FaReact, FaAngular, FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaPython, FaJava, FaGitAlt, FaBootstrap } from 'react-icons/fa';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
 
 const Skills = () => {
   const skills = [
@@ -16,7 +14,6 @@ const Skills = () => {
     { icon: <FaJava />, name: 'Java' },
     { icon: <FaGitAlt />, name: 'Git' },
     { icon: <FaBootstrap />, name: 'Bootstrap' },
-    // Add more skills as needed
   ];
 
   return (
@@ -31,42 +28,62 @@ const Skills = () => {
 };
 
 const SwipeableSkillsSection = ({ skills }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const skillsPerView = 3;
-  const skillsViews = [];
-  const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
-  // Create an infinite loop of skills
+  const containerRef = useRef(null);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
   const infiniteSkills = [...skills, ...skills, ...skills];
 
-  for (let i = 0; i < infiniteSkills.length; i += skillsPerView) {
-    skillsViews.push(
-      <div key={i} className="skills-grid">
-        {infiniteSkills.slice(i, i + skillsPerView).map((skill, index) => (
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(true);
+    };
+
+    const container = containerRef.current;
+    if (window.innerWidth <= 768 && container) {
+      container.addEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      if (window.innerWidth <= 768 && container) {
+        container.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    let timer;
+
+    const startAutoScroll = () => {
+      timer = setInterval(() => {
+        setScrollPosition((prevPosition) => (prevPosition + 100) % (infiniteSkills.length * 100));
+      }, 2000);
+    };
+
+    const stopAutoScroll = () => {
+      clearInterval(timer);
+    };
+
+    if (window.innerWidth <= 768 && !isScrolling) {
+      startAutoScroll();
+    } else {
+      stopAutoScroll();
+    }
+
+    return stopAutoScroll;
+  }, [isScrolling, infiniteSkills.length]);
+
+
+  return (
+    <div ref={containerRef}>
+      <div className="skills-row" style={{ transform: `translateX(-${scrollPosition}%)` }}>
+        {infiniteSkills.map((skill, index) => (
           <div key={index} className="skill-cell">
             <div className="skill-icon">{skill.icon}</div>
             <div className="skill-name">{skill.name}</div>
           </div>
         ))}
       </div>
-    );
-  }
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % skillsViews.length);
-    }, 2000); // Adjust the delay (in milliseconds) to control the speed
-
-    return () => clearInterval(timer);
-  }, [skillsViews.length]);
-
-  return (
-    <AutoPlaySwipeableViews
-      index={currentIndex}
-      disabled={true} // Disable swiping gesture
-    >
-      {skillsViews}
-    </AutoPlaySwipeableViews>
+    </div>
   );
 };
 

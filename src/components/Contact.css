@@ -1,9 +1,11 @@
 /* Contact.css */
 .contact {
-  color: #000;
+  color: #570e40;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .contact p {

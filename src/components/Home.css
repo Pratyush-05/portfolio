@@ -18,7 +18,7 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
   }
   .nav-item {
     margin: 0.5rem 0;
@@ -40,9 +40,11 @@
     z-index: 1; /* Ensure it's on top of other elements */
   }
 
-  .description{
+  .description {
     font-size: small;
   }
+
+
 } /* Styles for screens between 768px and 1024px (tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .home {
@@ -56,6 +58,12 @@
 } /* Styles for screens larger than 1024px (desktops) */
 @media (min-width: 1025px) {
   /* Existing styles */
+
+  .left-desc{
+    margin-bottom: 3rem;
+    font-size: larger;
+    text-align: left;
+  }
   .home {
     width: 50%;
     min-height: 100vh;
@@ -80,11 +88,11 @@
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-  .hero-content p {
+  /* .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     text-align: justify;
-  } /* .btn { display: inline-block; background-color: 460932; color: #fff; padding: 0.5rem 1rem; border-radius: 0.25rem; text-decoration: none; transition: background-color 0.3s ease; } .btn:hover { background-color: rgb(60, 60, 60); } */
+  } .btn { display: inline-block; background-color: 460932; color: #fff; padding: 0.5rem 1rem; border-radius: 0.25rem; text-decoration: none; transition: background-color 0.3s ease; } .btn:hover { background-color: rgb(60, 60, 60); } */
   .subheading p {
     font-size: 1.2rem;
     text-align: left;
@@ -94,7 +102,6 @@
     /* color:#ff4052; */
     text-align: left;
   }
-
 
   .mainContainer {
     display: flex;
@@ -109,6 +116,7 @@
     margin-left: 1rem;
   }
   .nav-link {
+    cursor: default;
     color: black;
     text-decoration: none;
     padding: 0.5rem;
@@ -118,16 +126,33 @@
   .nav-link.active {
     /* Class for the active link */
     font-weight: bold; /* Making the text bold */
-    font-size: 1.25rem; /* Increasing the font size to make it grow */
-    color: black; /* Change color to make it visually distinctive */
+    font-size: x-large; /* Increasing the font size to make it grow */
+    color: #ff4052; /* Change color to make it visually distinctive */
   }
   .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
     cursor: default;
+    cursor: pointer;
   }
   .navbar-nav {
-    margin: 5rem;
-    justify-content: center;
+    font-size: large;
+    flex-direction: column;
+    list-style: none;
+    justify-content: start;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: -20px;
+  }
+
+  .description{
+    font-size: x-large;
+  }
+
+  .sect{
+    display: none;
+  }
+  hr{
+    display: none;
   }
 }
 .designation {
@@ -135,14 +160,13 @@
   margin-top: -30px;
 }
 
-.name{
+.name {
   text-align: left;
 }
 
 .description {
   margin-right: 1rem;
   text-align: justify;
-  padding: 1rem;
   line-height: 1.4rem;
   margin: auto;
 }
@@ -151,13 +175,12 @@ strong {
   color: #ff4052;
 }
 
-.hero-content{
+.hero-content {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
 }
 
-.sect{
-
+.sect {
   margin-bottom: 0px;
 }

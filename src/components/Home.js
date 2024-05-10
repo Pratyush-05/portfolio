@@ -20,16 +20,10 @@ const Home = () => {
           <h2 className="designation">Front-end Developer</h2>
           <Contact />
 
-          <p className="description">
+          <p className=" left-desc">
             Hi, I'm Pratyush, a passionate front-end developer with expertise in
-            Angular and React. I have <strong>3 years of experience</strong> in
-            developing scalable and robust web applications. I have extensive
-            experience in building responsive web applications using{" "}
-            <strong>Angular, ReactJS, Javascript</strong>. My role involved
-            collaborating closely with clients to understand their requirements
-            and translating them into efficient and user-friendly applications.
+            Angular and React.
           </p>
-
 
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -40,6 +34,7 @@ const Home = () => {
                 smooth={true}
                 duration={500}
                 activeClass="active"
+                offset={-70}
               >
                 Experience
               </Link>
@@ -78,11 +73,6 @@ const Home = () => {
                 activeClass="active"
               >
                 Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">
-                Contact
               </Link>
             </li>
           </ul>
@@ -126,4 +116,3 @@ const Home = () => {
 };
 
 export default Home;
- 
