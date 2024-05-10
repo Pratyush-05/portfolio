@@ -1,27 +1,56 @@
-// WorkExperience.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './WorkExperience.css';
 
 const WorkExperience = ({ company, location, role, startDate, endDate, responsibilities, techStacks }) => {
+  const [expanded, setExpanded] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const truncatedResponsibilities = responsibilities.slice(0, 2);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleReadMore = () => setExpanded(!expanded);
+
   return (
     <div className="work-experience-card">
       <div className="card-header">
         <div className="ex">
-          <h2 className='company'>{company}</h2>
-          <p className='role'>{role}</p>
+          <h2 className="company">{company}</h2>
+          <p className="role">{role}</p>
         </div>
         <div className="role-info">
+          {expanded ? (
           <p>{location}</p>
+        ) : (
+          null
+        )}
           <p>{`${startDate} - ${endDate}`}</p>
         </div>
       </div>
-      
       <div className="card-content">
-        <ul>
-          {responsibilities.map((responsibility, index) => (
-            <li key={index}>{responsibility}</li>
-          ))}
-        </ul>
+        {expanded ? (
+          <p className="responsibilities">{responsibilities.join(' ')}</p>
+        ) : (
+          <p className="responsibilities">{truncatedResponsibilities.join(' ')}</p>
+        )}
+        {isMobile && !expanded && responsibilities.length > 2 && (
+          <div className="read-more-container">
+            <button className="read-more-btn" onClick={handleReadMore}>
+              Read More
+            </button>
+          </div>
+        )}
+        {expanded && isMobile && (
+          <div className="read-more-container">
+            <button className="read-more-btn" onClick={handleReadMore}>
+              Read Less
+            </button>
+          </div>
+        )}
         <div className="tech-stacks">
           {techStacks.map((stack, index) => (
             <span key={index} className="tech-stack">

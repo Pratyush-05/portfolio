@@ -18,7 +18,8 @@ const Home = () => {
         <div className="hero-content">
           <h1>Pratyush Purohit</h1>
           <h2 className="designation">Front-end Developer</h2>
-          <Contact /> {/* Render the Contact component here */}
+          <Contact />
+
           <p>
             Hi, I'm Pratyush, a passionate front-end developer with expertise in
             Angular and React. I have <strong>3 years of experience</strong> in
@@ -29,7 +30,13 @@ const Home = () => {
             and translating them into efficient and user-friendly applications.
           </p>
           <DownloadResumeButton googleDriveLink={googleDriveResumeLink} />
+
           <br />
+
+          <br />
+
+          <SocialMedia />
+
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
@@ -90,7 +97,6 @@ const Home = () => {
       <div className="home">
         <div className="hero">
           <div className="hero-content">
-            <SocialMedia /> {/* Render the SocialMedia component here */}
             <br />
             <br />
             <br />
@@ -126,3 +132,4 @@ const Home = () => {
 };
 
 export default Home;
+ 
