@@ -29,11 +29,7 @@ const Home = () => {
             collaborating closely with clients to understand their requirements
             and translating them into efficient and user-friendly applications.
           </p>
-          <DownloadResumeButton googleDriveLink={googleDriveResumeLink} />
 
-
-
-          <SocialMedia />
 
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -90,31 +86,34 @@ const Home = () => {
               </Link>
             </li>
           </ul>
+
+          <DownloadResumeButton googleDriveLink={googleDriveResumeLink} />
+          <SocialMedia />
         </div>
       </div>
       <div className="home">
         <div className="hero">
           <div className="hero-content">
             <div className="subheading" id="experience" name="experience">
-              <h2>Experience</h2>
+              <h2 className="sect">Experience</h2>
               <hr />
               <Experience />
             </div>
             <br />
             <div className="subheading" id="education" name="education">
-              <h2>Education</h2>
+              <h2 className="sect">Education</h2>
               <hr />
               <Education />
             </div>
             <br />
             <div className="subheading" id="skills" name="skills">
-              <h2>Skills</h2>
+              <h2 className="sect">Skills</h2>
               <hr />
               <Skills />
             </div>
             <br />
             <div className="subheading" id="projects" name="projects">
-              <h2>Projects</h2>
+              <h2 className="sect">Projects</h2>
               <hr />
               <Projects />
             </div>

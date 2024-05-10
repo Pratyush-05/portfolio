@@ -1,8 +1,7 @@
 /* ProjectCard.css */
 .project-card {
   padding: 10px;
-  margin-bottom: 1rem;
-  margin: 1rem;
+  margin: 1.5rem 1rem;
   border: 2px solid #570e40;
   background-color: #fffaf2;
   box-shadow: -5px 5px 0 0 #ffbf21;
@@ -44,20 +43,16 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .project-card {
-    padding: 8px;
-    margin: 0.5rem;
-  }
 
   .project-title {
-    font-size: 16px;
+    font-size:large;
   }
 
   .project-description {
-    font-size: 14px;
+    font-size: smaller;
   }
 
   .project-link-icon {
-    font-size: 16px;
+    font-size: smaller;
   }
 }

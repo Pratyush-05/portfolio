@@ -154,4 +154,10 @@ strong {
 .hero-content{
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+}
+
+.sect{
+
+  margin-bottom: 0px;
 }
