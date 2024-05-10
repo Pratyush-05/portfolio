@@ -68,9 +68,24 @@ const Experience = () => {
         I have <strong>3 years of experience</strong> in developing scalable and
         robust web applications. I have extensive experience in building
         responsive web applications using{" "}
-        <strong>Angular, ReactJS, Javascript</strong>. My role involved
-        collaborating closely with clients to understand their requirements and
-        translating them into efficient and user-friendly applications.
+        <strong>Angular, ReactJS, Javascript</strong>. I like to collaborate
+        closely with clients to understand their requirements and translate them
+        into efficient and user-friendly applications.
+      </p>
+
+      <p>
+        I co-founded{" "}
+        <strong>
+          <a href="https://www.instagram.com/the.odd.ball_/"> The Oddball</a>
+        </strong>
+        , indulging my passion for research and infographics. This platform
+        explores important issues, presenting information through visually
+        compelling, opinion-driven infographics sparking thought-provoking
+        conversations.
+      </p>
+      <p>
+        When not coding or researching, I like to delve into books, competitive
+        badminton, stock trading.
       </p>
       {workExperiences.map((experience, index) => (
         <WorkExperience

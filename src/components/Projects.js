@@ -11,13 +11,11 @@ const Projects = () => {
       title: 'Expense Tracker',
       description: 'A responsive website to keep track of your expenses and manage your personal budget.',
       techStacks: ['ReactJS', 'JavaScript', 'Material UI'],
-      projectLink: 'https://expense-tracker.example.com',
     },
     {
       title: 'Speed Typing Test',
       description: 'A web application to measure users\' typing speed and accuracy.',
       techStacks: ['ReactJS', 'JavaScript', 'Bootstrap'],
-      projectLink: 'https://typing-test.example.com',
     },
     // Add more projects as needed
   ];

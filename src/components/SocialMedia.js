@@ -10,10 +10,10 @@ const SocialMedia = () => {
         <a href="https://www.linkedin.com/in/pratyush-purohit" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn className="social-icon" />
         </a>
-        <a href="https://github.com/pratyush-purohit" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Pratyush-05" target="_blank" rel="noopener noreferrer">
           <FaGithub className="social-icon" />
         </a>
-        <a href="https://twitter.com/pratyushpurohit" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/iprotweet" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="social-icon" />
         </a>
       </div>
