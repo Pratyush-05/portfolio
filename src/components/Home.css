@@ -6,12 +6,10 @@
   }
   .home {
     width: 100%;
-    margin-left: 0;
   }
   .leftSection {
     position: static;
     width: 100%;
-    margin: 1rem;
   }
   .mainContainer {
     flex-direction: column;
@@ -40,6 +38,10 @@
     position: sticky; /* Make the header sticky */
     top: 0; /* Position it at the top */
     z-index: 1; /* Ensure it's on top of other elements */
+  }
+
+  .description{
+    font-size: small;
   }
 } /* Styles for screens between 768px and 1024px (tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -92,12 +94,8 @@
     /* color:#ff4052; */
     text-align: left;
   }
-  strong {
-    color: #ff4052;
-  }
-  .designation {
-    text-align: center;
-  }
+
+
   .mainContainer {
     display: flex;
   }
@@ -131,4 +129,29 @@
     margin: 5rem;
     justify-content: center;
   }
+}
+.designation {
+  text-align: left;
+  margin-top: -30px;
+}
+
+.name{
+  text-align: left;
+}
+
+.description {
+  margin-right: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  line-height: 1.4rem;
+  margin: auto;
+}
+
+strong {
+  color: #ff4052;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
 }

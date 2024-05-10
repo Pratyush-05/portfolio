@@ -16,11 +16,11 @@ const Home = () => {
     <div className="mainContainer">
       <div className="leftSection">
         <div className="hero-content">
-          <h1>Pratyush Purohit</h1>
+          <h1 className="name">Pratyush Purohit</h1>
           <h2 className="designation">Front-end Developer</h2>
           <Contact />
 
-          <p>
+          <p className="description">
             Hi, I'm Pratyush, a passionate front-end developer with expertise in
             Angular and React. I have <strong>3 years of experience</strong> in
             developing scalable and robust web applications. I have extensive
@@ -31,9 +31,7 @@ const Home = () => {
           </p>
           <DownloadResumeButton googleDriveLink={googleDriveResumeLink} />
 
-          <br />
 
-          <br />
 
           <SocialMedia />
 
@@ -97,9 +95,6 @@ const Home = () => {
       <div className="home">
         <div className="hero">
           <div className="hero-content">
-            <br />
-            <br />
-            <br />
             <div className="subheading" id="experience" name="experience">
               <h2>Experience</h2>
               <hr />
