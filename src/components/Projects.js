@@ -1,21 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import expenseTrackerImage from '../assets/expense-tracker.jpg';
-import speedTypingTestImage from '../assets/speed-typing-test.jpg';
+import React from "react";
+import { Link } from "react-router-dom";
+import expenseTrackerImage from "../assets/expense-tracker.jpg";
+import speedTypingTestImage from "../assets/speed-typing-test.jpg";
 
-import ProjectCard from './ProjectCard';
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Expense Tracker',
-      description: 'A responsive website to keep track of your expenses and manage your personal budget.',
-      techStacks: ['ReactJS', 'JavaScript', 'Material UI'],
+      title: "Chatting App",
+      description:
+        "A web app where people can login, chat and  share media with each other.",
+      techStacks: ["ReactJS", "Firebase", "JavaScript", "Bootstrap", "CSS"],
     },
     {
-      title: 'Speed Typing Test',
-      description: 'A web application to measure users\' typing speed and accuracy.',
-      techStacks: ['ReactJS', 'JavaScript', 'Bootstrap'],
+      title: "Expense Tracker",
+      description:
+        "A responsive website to keep track of your expenses and manage your personal budget.",
+      techStacks: ["ReactJS", "JavaScript", "Material UI"],
+    },
+    {
+      title: "Speed Typing Test",
+      description:
+        "A web application to measure users' typing speed and accuracy.",
+      techStacks: ["ReactJS", "JavaScript", "Bootstrap"],
     },
     // Add more projects as needed
   ];
