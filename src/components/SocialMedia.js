@@ -7,7 +7,7 @@ const SocialMedia = () => {
   return (
     <div className="social-media">
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/pratyush-purohit" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/pratyushpurohit" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn className="social-icon" />
         </a>
         <a href="https://github.com/Pratyush-05" target="_blank" rel="noopener noreferrer">
